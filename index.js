@@ -1,15 +1,13 @@
-import { countAnagrams } from "./anagrams.js";
+const { countAnagrams } = require("./anagrams.js");
 
 console.log(`Test results:`);
 
 const testCases = [
   { text: "abc", word: "d", expected: 0 },
+  { text: "abcba", word: "abc", expected: 2 },
   { text: "abacadabda", word: "ab", expected: 3 },
   { text: "abacadabaadaab", word: "aba", expected: 4 },
-  { text: "abcba", word: "abc", expected: 2 }
 ];
-
-let out = "";
 
 testCases.forEach(({ text, word, expected }, idx) => {
   const result = countAnagrams(text, word);

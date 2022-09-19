@@ -21,7 +21,7 @@
     result: 4 
  */
 
-export function countAnagrams(text, substr) {
+module.exports.countAnagrams = (text, substr) => {
   let result = 0;
   // your code here
 
